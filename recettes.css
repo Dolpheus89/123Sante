@@ -1,0 +1,14 @@
+.block-container{
+display:grid;
+grid-template-columns: 300px 300px;
+grid-template-columns: 300px, 300px;
+gap: 30px;
+
+}
+img {
+    border-radius: 50%;
+    width : 300px;
+    height : 300px;
+    border: white solid 3px;
+    filter: drop-shadow(10px 10px 10px rgb(58, 60, 58));
+     }
