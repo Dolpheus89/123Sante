@@ -1,0 +1,40 @@
+h1 {
+    font-size: 4em;
+    width: 90%;
+    margin: 0;
+    padding-left: 25%;
+    padding-top: 40%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    position: absolute;
+}
+
+.elliptique {
+    width: 400px;
+    height: auto;
+    position: relative;
+    bottom: 28em;
+    left: 8em;
+}
+
+.logo {
+    width: 1000px;
+    height: auto;
+    position: relative;
+    left: 1em;
+    top: 10em;
+}
+
+.carrot {
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    top: -20em;
+    left: 2em;
+}
