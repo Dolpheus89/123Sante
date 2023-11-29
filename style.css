@@ -7,21 +7,22 @@
     --body: ;
 
 
-    --HeadingXL: 4rem 'Kurale', sans-serif;
-    --HeadingL: 2.5rem 'Kurale', sans-serif;
-    --HeadingM: 2rem 'Kurale', sans-serif;
-    --HeadingS: 1.5rem 'Kurale', sans-serif;
+    --HeadingXL: lighter 4rem 'Kurale', sans-serif;
+    --HeadingL: lighter 2.5rem 'Kurale', sans-serif;
+    --HeadingM: lighter 2rem 'Kurale', sans-serif;
+    --HeadingS: lighter 1.5rem 'Kurale', sans-serif;
 
     --p: 1.25rem 'Kurale', sans-serif;
     --pMobile: 1rem 'Kurale', sans-serif;
     --Footer: #0F334D 1.25rem 'Kurale', sans-serif;
 
-    --shadow: 0px 11px 38px 12px
+    --shadow: 2px 4px 4px 0px #4F03AB33;
 }
 
 
 * {
     font-family: 'Kurale', serif;
+    color: #2D1D40;
 }
 
 html {
@@ -51,4 +52,154 @@ button:hover {
     cursor: pointer;
 }
 
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #4F03AB;
+
+}
+
+/* Nav */
+
+nav {
+    margin: auto;
+    height: 100px;
+    background-color: #fff;
+    width: 80%;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    position: relative;
+    width: 90px;
+    z-index: +1;
+    left: 30px;
+}
+
+#ellipse {
+    position: relative;
+    right: 50px;
+}
+
+.textContainer {
+    margin-left: -30px;
+}
+
+.textContainer h2,
+.textContainer p {
+    margin: 0;
+}
+
+#realMenu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+
+#realMenu li {
+    font: var(--p);
+    margin: 0 15px;
+}
+
+#menu {
+    display: none;
+    color: #FFC47E;
+}
+
+#hiddenMenuList {
+    display: none;
+}
+
 /* Fin Css Commun
+
+
+/* Media Queries */
+
+@media screen and (max-width:1024px) {
+    #realMenu li {
+        font: var(--pMobile);
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    #realMenu {
+        margin-right: 20px;
+    }
+
+    .link {
+        display: none;
+    }
+
+    #menu {
+        scale: 1.5;
+        display: block;
+        cursor: pointer;
+        margin: 0;
+        transition-duration: 1s;
+    }
+
+    #menu.active {
+        transform: rotate(-90deg);
+        transition-duration: 1s;
+    }
+
+    .logoContainer {
+        scale: 0.8;
+    }
+
+    #hiddenMenuList {
+        visibility: hidden;
+        list-style: none;
+        background: var(--primaryColor);
+        padding: 0;
+        margin: 10px;
+        text-align: center;
+        height: 100px;
+        width: 150px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        right: 12%;
+        top: 120px;
+        opacity: 0;
+        transition-duration: 1s;
+        box-shadow: var(--shadow);
+    }
+
+    #hiddenMenuList.active {
+        visibility: visible;
+        opacity: 1;
+        height: 150px;
+        transition-duration: 1s;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    nav {
+        width: 90%;
+    }
+
+    .logoContainer {
+        scale: 0.6;
+    }
+
+    #hiddenMenuList {
+        right: 8%;
+    }
+}
