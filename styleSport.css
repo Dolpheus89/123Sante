@@ -1,14 +1,21 @@
-ul li {
-    list-style: none;
-    display : inline-flex;
-}
-
-ul li a{
-    text-decoration: none;
-}
-
-li{
-    display : flex;
+#programmes{
+    display: flex;
     justify-content: center;
-    justify-content: space-around;
+    text-align: center;
+    list-style: none;
 }
+
+div a {
+    display : inline-block;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+
