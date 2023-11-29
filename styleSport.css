@@ -14,8 +14,32 @@ div a {
 
 .list {
     list-style: none;
-    display: flex;
+    display: flex;n
     justify-content: center;
     background-color: aqua;
 }
 
+.text{
+    text-align: center;
+    font-size: 22px;
+}
+
+.seance-maison{
+    display: inline-block;
+    text-align: center;
+    text-orientation: column;
+    padding-top: 20px;
+}
+
+.En-salle{
+    display: inline-block;
+    text-align: center;
+    text-orientation: column;
+    justify-content:end;
+    padding-top: 20px;
+}
+
+.seances{
+    display: flex;
+    justify-content: space-around;
+}
