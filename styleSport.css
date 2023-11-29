@@ -1,0 +1,14 @@
+ul li {
+    list-style: none;
+    display : inline-flex;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+li{
+    display : flex;
+    justify-content: center;
+    justify-content: space-around;
+}
