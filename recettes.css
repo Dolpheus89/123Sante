@@ -11,10 +11,6 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
-img {
-    position: absolute;
-}
-
 .elliptique {
     width: 400px;
     height: auto;
