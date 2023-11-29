@@ -1,0 +1,54 @@
+/* CSS Commun ne pas modifier */
+
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
+:root {
+    --primaryColor: #E4D8FE;
+    --body: ;
+
+
+    --HeadingXL: 4rem 'Kurale', sans-serif;
+    --HeadingL: 2.5rem 'Kurale', sans-serif;
+    --HeadingM: 2rem 'Kurale', sans-serif;
+    --HeadingS: 1.5rem 'Kurale', sans-serif;
+
+    --p: 1.25rem 'Kurale', sans-serif;
+    --pMobile: 1rem 'Kurale', sans-serif;
+    --Footer: #0F334D 1.25rem 'Kurale', sans-serif;
+
+    --shadow: 0px 11px 38px 12px
+}
+
+
+* {
+    font-family: 'Kurale', serif;
+}
+
+html {
+    background-color: var(--primaryColor);
+    padding: 5%;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(249, 245, 255, 1) 50%);
+    margin: auto;
+    min-height: 200vh;
+}
+
+button {
+    background-color: #4F03AB;
+    border: solid 1px #4F03AB;
+    color: white;
+    border-radius: 10px;
+    height: 62px;
+    width: 193px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: white;
+    color: #4F03AB;
+    cursor: pointer;
+}
+
+/* Fin Css Commun
