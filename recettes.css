@@ -4,7 +4,8 @@ h1 {
     width: 90%;
     margin: 0;
     padding-left: 15%;
-    padding-top: 40%;
+    display: flex;
+    align-items: center;
 }
 
 section {
@@ -84,18 +85,16 @@ h2 {
 }
 
 /*Ecran intermediaire*/
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1240px) {
 
     h1 {
-        font-size: 2em;
+        font-size: 3em;
         padding-left: 20%;
-        display: flex;
-        align-items: center;
     }
 
     .imgintro {
         width: auto;
-        height: 30em;
+        height: 40em;
         margin: auto;
         padding-top: 10%;
     }
@@ -133,7 +132,7 @@ h2 {
 @media screen and (max-width:900px) {
 
     h1 {
-        font-size: 2em;
+        font-size: 2.2em;
         padding-left: 20%;
     }
 
@@ -142,7 +141,7 @@ h2 {
     }
 
     .imgintro {
-        width: 20em;
+        width: 23em;
         height: auto;
     }
 
@@ -166,6 +165,7 @@ h2 {
     #salad {
         width: 5rem;
         height: 5rem;
+        padding-top: 5px;
     }
 
     #fish {
@@ -193,6 +193,10 @@ h2 {
         width: 20em;
         margin: auto;
         padding-top: 10%;
+    }
+
+    #salad {
+        padding-top: 2px;
     }
 }
 
@@ -222,12 +226,13 @@ h2 {
     #meet {
         width: 3rem;
         height: 3rem;
-        padding-top: 3px;
+        padding-top: 6px;
     }
 
     #salad {
         width: 3rem;
         height: 3rem;
+        padding-top: 4px;
     }
 
     #fish {
