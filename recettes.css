@@ -83,9 +83,53 @@ h2 {
     transform: scale(1.5);
 }
 
+/*Ecran intermediaire*/
+@media screen and (max-width:1000px) {
+
+    h1 {
+        font-size: 2em;
+        padding-left: 20%;
+        display: flex;
+        align-items: center;
+    }
+
+    .imgintro {
+        width: auto;
+        height: 30em;
+        margin: auto;
+        padding-top: 10%;
+    }
+
+    section {
+        height: 550px;
+    }
+
+    #meet {
+        width: 9rem;
+        height: 9rem;
+        padding-top: 30px;
+    }
+
+    #salad {
+        width: 9rem;
+        height: 9rem;
+        padding-top: 20px;
+    }
+
+    #fish {
+        width: 10rem;
+        height: 10rem;
+        padding-top: 20px;
+    }
+
+    #avocado {
+        width: 5rem;
+        height: 6rem;
+        padding-top: 50px;
+    }
+}
 
 /*Pour Ipad*/
-
 @media screen and (max-width:900px) {
 
     h1 {
@@ -98,12 +142,19 @@ h2 {
     }
 
     .imgintro {
-        width: 25em;
+        width: 20em;
         height: auto;
     }
 
     .fondingredient {
         margin-top: 20%;
+    }
+
+    h2 {
+        font-size: 1em;
+        text-align: center;
+        font-weight: 100;
+        padding-top: 2em;
     }
 
     #meet {
@@ -128,17 +179,24 @@ h2 {
         height: 4rem;
         padding-top: 10px;
     }
+}
 
-    h2 {
-        font-size: 1em;
-        text-align: center;
-        font-weight: 100;
-        padding-top: 2em;
+/*Ecran intermediaire*/
+@media screen and (max-width:680px) {
+
+    h1 {
+        font-size: 1.8em;
+        padding-left: 20%;
+    }
+
+    .imgintro {
+        width: 20em;
+        margin: auto;
+        padding-top: 10%;
     }
 }
 
 /*Pour Tel*/
-
 @media screen and (max-width:500px) {
 
     h1 {
@@ -152,9 +210,36 @@ h2 {
     }
 
     .imgintro {
-        width: 25em;
-        height: auto;
-        top: 7%;
-        left: 45%;
+        width: 20em;
+        margin: auto;
+
     }
+
+    .fondingredient {
+        margin-top: 0;
+    }
+
+    #meet {
+        width: 3rem;
+        height: 3rem;
+        padding-top: 3px;
+    }
+
+    #salad {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #fish {
+        width: 3.5rem;
+        height: 3.5rem;
+        padding-top: 2px;
+    }
+
+    #avocado {
+        width: 2rem;
+        height: 2.5rem;
+        padding-top: 5px;
+    }
+
 }
