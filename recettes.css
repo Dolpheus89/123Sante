@@ -1,5 +1,5 @@
 
-h1 {
+.h1-header {
     font-size: 4em;
     font-weight: 100;
     width: 90%;
@@ -9,7 +9,7 @@ h1 {
     align-items: center;
 }
 
-section {
+.section-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 750px;
@@ -126,7 +126,7 @@ gap: 30px;
 /*Ecran intermediaire*/
 @media screen and (max-width:1240px) {
 
-    h1 {
+    .h1-header {
         font-size: 3em;
         padding-left: 20%;
     }
@@ -138,7 +138,7 @@ gap: 30px;
         padding-top: 10%;
     }
 
-    section {
+    .section-header {
         height: 550px;
     }
 
@@ -170,12 +170,12 @@ gap: 30px;
 /*Pour Ipad*/
 @media screen and (max-width:900px) {
 
-    h1 {
+    .h1-header {
         font-size: 2.2em;
         padding-left: 20%;
     }
 
-    section {
+    .section-header {
         height: 200px;
     }
 
@@ -266,7 +266,7 @@ gap: 0px;
 /*Ecran intermediaire*/
 @media screen and (max-width:680px) {
 
-    h1 {
+    .h1-header {
         font-size: 1.8em;
         padding-left: 20%;
     }
@@ -285,7 +285,7 @@ gap: 0px;
 /*Pour Iphone*/
 @media screen and (max-width:500px) {
 
-    h1 {
+    .h1-header {
         text-align: center;
         background-image: url(Img/logo.png);
         background-size: 400px;
@@ -296,7 +296,7 @@ gap: 0px;
         height: 10em;
     }
 
-    section {
+    .section-header {
         display: grid;
         grid-template-columns: 1fr;
         height: 300px;
