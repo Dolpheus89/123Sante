@@ -10,18 +10,16 @@ h1 {
 section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 750px;
 }
 
 .imgintro {
-    width: 55em;
-    height: auto;
-    position: absolute;
-    top: 10em;
-    left: 50em;
+    width: auto;
+    height: 55rem;
 }
 
-div {
-    margin: 20% 5% 0% 5%;
+.fondingredient {
+    margin: 0% 5% 0% 5%;
     padding: 0;
     background-color: white;
     border-radius: 10px;
@@ -35,32 +33,128 @@ h2 {
     padding-top: 2em;
 }
 
-button1 {
+.btningredient {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 2%;
 }
 
-.meet {
+#meet {
     width: 14rem;
     height: 14rem;
     padding-top: 20px;
 }
 
-.salad {
+#meet:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+#salad {
     width: 14rem;
     height: 14rem;
 }
 
-.fish {
-    width: 14rem;
-    height: 14rem;
+#salad:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+#fish {
+    width: 14em;
+    height: 14em;
     padding-top: 20px;
 }
 
-.avocado {
+#fish:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+#avocado {
     padding-top: 40px;
     width: 7rem;
     height: 10rem;
+}
+
+#avocado:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+
+/*Pour Ipad*/
+
+@media screen and (max-width:900px) {
+
+    h1 {
+        font-size: 2em;
+        padding-left: 20%;
+    }
+
+    section {
+        height: 200px;
+    }
+
+    .imgintro {
+        width: 25em;
+        height: auto;
+    }
+
+    .fondingredient {
+        margin-top: 20%;
+    }
+
+    #meet {
+        width: 5rem;
+        height: 5rem;
+        padding-top: 10px;
+    }
+
+    #salad {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    #fish {
+        width: 5rem;
+        height: 5rem;
+        padding-top: 10px;
+    }
+
+    #avocado {
+        width: 3rem;
+        height: 4rem;
+        padding-top: 10px;
+    }
+
+    h2 {
+        font-size: 1em;
+        text-align: center;
+        font-weight: 100;
+        padding-top: 2em;
+    }
+}
+
+/*Pour Tel*/
+
+@media screen and (max-width:500px) {
+
+    h1 {
+        display: none;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 300px;
+    }
+
+    .imgintro {
+        width: 25em;
+        height: auto;
+        top: 7%;
+        left: 45%;
+    }
 }
