@@ -32,6 +32,9 @@ body {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(249, 245, 255, 1) 50%);
     margin: auto;
     min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 button {
@@ -176,6 +179,7 @@ nav {
         opacity: 0;
         transition-duration: 1s;
         box-shadow: var(--shadow);
+        z-index: +1;
     }
 
     #hiddenMenuList.active {
