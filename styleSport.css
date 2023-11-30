@@ -10,16 +10,23 @@ div a {
     text-decoration: none;
     color: black;
     justify-content: center;
+    margin: 0;
 }
 
 .list {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
     background-color: white;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+a{
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .text{
@@ -28,7 +35,7 @@ div a {
 }
 
 .seance-maison{
-    display: inline-block;
+    display: inline-block; */
     text-align: center;
     text-orientation: column;
     padding-top: 20px;
@@ -45,4 +52,22 @@ div a {
 .seances{
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
+
+
+@media screen and (max-width:650px){
+    .seances{flex-wrap: wrap;}
+    .choixLieux{width:50%, heigth:50%}
+}
+
+@media screen and (max-width:500px){
+    .list{flex-direction: column;}
+}
+
+.pop-up{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
