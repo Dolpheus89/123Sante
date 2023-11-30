@@ -1,0 +1,27 @@
+.byteam {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    margin-bottom: 300px;
+}
+
+.team-member {
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+}
+
+.member-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.member-info {
+    margin-top: 10px;
+}
