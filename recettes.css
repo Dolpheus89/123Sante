@@ -204,7 +204,14 @@ h2 {
 @media screen and (max-width:500px) {
 
     h1 {
-        display: none;
+        text-align: center;
+        background-image: url(Img/logo.png);
+        background-size: 400px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding: 0;
+        margin: auto;
+        height: 10em;
     }
 
     section {
@@ -214,9 +221,7 @@ h2 {
     }
 
     .imgintro {
-        width: 20em;
-        margin: auto;
-
+        display: none;
     }
 
     .fondingredient {
