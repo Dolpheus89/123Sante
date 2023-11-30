@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Sos.css">
+    <title>Document</title>
+<body>
+    <header> 
+        <nav>
+            <div class="logoContainer">
+                <img src="assets/WhatsApp_Image_2023-11-24_at_10.49.16.png" alt="logo" id="logo">
+                <img src="assets/Ellipse 39.png" alt="logo background" id="ellipse">
+                <div class="textContainer">
+                    <h2>123...Santé</h2>
+                    <p>Prêt(e) à te challenger ?</p>
+                </div>
+            </div>
+            <ul id="realMenu">
+                <li class="link"><a href="index.html">Accueil</a></li>
+                <li class="link"><a href="sport.html">Séances sport</a></li>
+                <li class="link"><a href="recettes.html">Idées menu</a></li>
+                <li id="menu">◄</li>
+            </ul>
+            <ul id="hiddenMenuList">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="sport.html">Séances sport</a></li>
+                <li><a href="recettes.html">Idées menu</a></li>
+            </ul>
+        </nav>
+     </div>
+</header>
+<main>
+    <section id="topSection">
+        <h1>Une blessure ? <br> Une intoxication alimentaire ? <br><br> Utiliser notre calculatrice pour connaitre votre remboursement !</h1>
+        <img src="assets/goodguy.png" alt="good guy with good heart">
+    </section>
+
+    <section id="middleWrap">
+        <h2>Nos services ?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, itaque in sed repudiandae nostrum et, nulla architecto, deserunt odit perferendis saepe hic voluptatum! Harum, inventore.</p>
+    </section>
+
+
+    <section id="calculatorSection">
+        <article id="data">
+            <h3>Données prises en comptes </h3>
+            <div class="glass">
+                <h3>Taux Sécurité social</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque</p>
+            </div>
+            <div class="glass">
+                <h3>Taux garantie mutuelle</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque</p>
+            </div>
+            <div class="glass">
+                <h3>Tarif conventionel</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque</p>
+            </div>
+            <div class="glass">
+                <h3>Dépassement d’honoraires</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque</p>
+            </div>
+        </article>
+        <article class="glass calculatorContainer">
+            <form id="calculator" action="">
+                <label for="regSS">Régime Sécurité social</label>
+                <div id="regSSContainer">
+                    <input type="radio" name="General" id="regSS">
+                    <input type="radio" name="AlsaceM" id="regSS">
+                </div>
+                <label for="tarifC">Tarif conventionel</label>
+                <input type="text" name="tarifC" id="tarifC">
+                <label for="mtnD">Montant dépassement</label>
+                <input type="text" name="mtnD" id="mtnD">
+                <label for="tauxGMut">Taux garantie mutuelle</label>
+                <input type="text" name="tauxGMut" id="tauxGMut">
+                <input type="button" value="Calcul" id="calcul">
+                <input type="text" id="result">
+
+            </form>
+        </article>
+    </section>
+</main>
+<footer>
+
+</footer>
+  <script src="index.js"></script>
+</body>
+</html>
