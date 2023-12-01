@@ -5,7 +5,7 @@ header {
 section {
 
     margin-left: 2%;
-    padding-bottom: 20%;
+    /* padding-bottom: 20%; */
     display: flex;
 }
 
@@ -15,7 +15,7 @@ section {
     text-align: center;
     border-radius: 10px;
     padding: 1em;
-    margin: 0 25%;
+    margin: 5% 25% 0 25%;
     font-size: 2.5vw;
 }
 
@@ -79,6 +79,7 @@ div a {
     background-color: white;
     margin-left: 50px;
     margin-right: 50px;
+    box-shadow: var(--shadow);
 }
 
 a{
@@ -92,7 +93,7 @@ a{
 }
 
 .seance-maison{
-    display: inline-block; */
+    display: inline-block;
     text-align: center;
     text-orientation: column;
     padding-top: 20px;
@@ -115,11 +116,13 @@ a{
 
 @media screen and (max-width:650px){
     .seances{flex-wrap: wrap;}
-    .choixLieux{width:50%, heigth:50%}
+    .choixLieux{width:50%; heigth: 50%;}
 }
 
 @media screen and (max-width:500px){
     .list{flex-direction: column;}
+    
+
 }
 
 .pop-up{
