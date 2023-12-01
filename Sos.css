@@ -31,10 +31,11 @@ li a:hover {
 #topSection h1 {
     max-width: 550px;
     padding-left: 20px;
+    margin: 0 auto;
 }
 
 #topSection img {
-    width: 650px;
+    width: 50%;
 }
 
 /* MiddleXrap */
@@ -42,7 +43,7 @@ li a:hover {
 #middleWrap {
     background-color: white;
     width: 80%;
-    margin: 5% auto;
+    margin: 0 auto 5% auto;
     border-radius: 10px;
     box-shadow: var(--shadow);
     min-height: 180px;
@@ -76,6 +77,7 @@ li a:hover {
     flex-direction: column;
     align-items: center;
     margin: 8%;
+    border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .glass h3 {
@@ -88,7 +90,7 @@ li a:hover {
 }
 
 .calculatorContainer {
-    width: 350px;
+    width: 300px;
     height: 90%;
     margin: 5% 0;
 }
@@ -104,26 +106,117 @@ li a:hover {
     align-items: flex-start;
     font-size: 1.17rem;
     font-weight: bold;
-    margin: 50px auto;
+    margin: 30px auto;
     width: 90%;
 }
 
-#calculator input {
-    margin: 5%;
+#calculator input[type=text],
+select {
+    margin: 5% 8%;
     width: 80%;
-    border-radius: 5px;
-    border-style: none;
-    box-shadow: var(--shadow);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.12);
+    text-align: center;
 }
 
 #calcul {
     background-color: #023e77;
     color: white;
     border-radius: 10px;
+    width: 80%;
+    margin: 5% 8%;
     max-width: 100px;
     align-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-#regSS {
-    box-shadow: 0 0 0 0;
+#calcul:hover {
+    background-color: white;
+    color: #023e77;
+    cursor: pointer;
+}
+
+fieldset {
+    text-align: center;
+    box-shadow: none;
+    margin: 5% 8%;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+legend {
+    margin-bottom: 5%;
+}
+
+#RG,
+#RL {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+label {
+    margin: 0 8%;
+}
+
+#result:hover {
+    cursor: default;
+}
+
+.page-footer {
+    background-color: #D8ECFE;
+    margin-bottom: -70px;
+}
+
+
+@media screen and (max-width:1280px) {
+    #topSection h1 {
+        font-size: 2.2rem;
+        margin-bottom: 5%;
+    }
+
+    #topSection img {}
+}
+
+@media screen and (max-width:900px) {
+
+    body {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 65%, rgba(245, 251, 255, 1) 65%);
+    }
+
+    #topSection {
+        margin: 8% auto;
+        text-align: center;
+    }
+
+    #topSection img {
+        display: none;
+    }
+
+    #middleWrap {
+        margin: 5% auto;
+    }
+
+    #calculatorSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10% auto;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    #topSection {
+        scale: 0.7;
+    }
+
+    #topSection h1 {
+        margin: 0;
+    }
+
+    .glass {
+        margin: 8% 1%;
+    }
 }

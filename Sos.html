@@ -33,7 +33,7 @@
 </header>
 <main>
     <section id="topSection">
-        <h1>Une blessure ? <br> Une intoxication alimentaire ? <br><br> Utiliser notre calculatrice pour connaitre votre remboursement !</h1>
+        <h1>Une blessure ? <br> Une intoxication <br> alimentaire ? <br><br> Utiliser notre calculatrice <br> pour connaitre votre remboursement !</h1>
         <img src="assets/goodguy.png" alt="good guy with good heart">
     </section>
 
@@ -65,26 +65,39 @@
         </article>
         <article class="glass calculatorContainer">
             <form id="calculator" action="">
-                <label for="regSS">Régime Sécurité social</label>
-                <div id="regSSContainer">
-                    <input type="radio" name="General" id="regSS">
-                    <input type="radio" name="AlsaceM" id="regSS">
-                </div>
+                <fieldset>
+                    <legend>Le Régime d’Assurance Maladie</legend>
+                    <label for="RG" id="RG">Régime général</label>
+                    <input type="radio" name="regime" id="RG">
+                    <label for="RL" id="RL">Régime local</label>
+                    <input type="radio" name="regime" id="RL">
+                </fieldset>
                 <label for="tarifC">Tarif conventionel</label>
                 <input type="text" name="tarifC" id="tarifC">
                 <label for="mtnD">Montant dépassement</label>
                 <input type="text" name="mtnD" id="mtnD">
                 <label for="tauxGMut">Taux garantie mutuelle</label>
-                <input type="text" name="tauxGMut" id="tauxGMut">
+                <select name="tauxGMut" id="tauxGMut">
+                    <option value="">--Please choose an option--</option>
+                    <option value="100%">100% de prise en charge</option>
+                    <option value="150%">150% de prise en charge</option>                   
+                    <option value="200%">200% de prise en charge</option>
+                    <option value="300%">300% de prise en charge</option>
+                  </select>                 
                 <input type="button" value="Calcul" id="calcul">
-                <input type="text" id="result">
+                <input type="text" id="result" readonly>
 
             </form>
         </article>
     </section>
 </main>
-<footer>
-
+<footer class="page-footer">
+    <li class="page-footer_team"><a href="pageteam.html">By Team</a></li>
+    <div class="social">
+        <a href="#"><img src="social/fb.png" alt="fb"></a>
+        <a href="#"><img src="social/inst.png" alt="inst"></a>
+        <a href="#"><img src="social/tw1.png" alt="twit"></a>
+    </div>
 </footer>
   <script src="index.js"></script>
 </body>

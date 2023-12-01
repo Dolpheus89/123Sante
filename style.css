@@ -217,7 +217,7 @@ li a:hover {
 /* Nav */
 
 nav {
-    margin: auto;
+    margin: 0 auto;
     height: 100px;
     background-color: #fff;
     width: 80%;
@@ -369,9 +369,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto;
-
-
+    margin-bottom: -70px;
 }
 
 .page-footer_team {
@@ -424,6 +422,11 @@ nav {
 
 
 @media screen and (max-width:900px) {
+
+    body {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 65%, rgba(249, 245, 255, 1) 65%);
+    }
+
     .page-footer_team {
         font-size: 1rem;
     }
