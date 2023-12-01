@@ -127,3 +127,8 @@ li a:hover {
 #regSS {
     box-shadow: 0 0 0 0;
 }
+
+.page-footer {
+    background-color: #D8ECFE;
+    margin-bottom: -70px;
+}

@@ -65,7 +65,7 @@ li a:hover {
 /* Nav */
 
 nav {
-    margin: auto;
+    margin: 0 auto;
     height: 100px;
     background-color: #fff;
     width: 80%;
@@ -217,9 +217,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto;
-
-
+    margin-bottom: -70px;
 }
 
 .page-footer_team {
