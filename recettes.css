@@ -1,22 +1,23 @@
 .title1 {
     font-size: 4em;
     font-weight: 100;
-    width: 90%;
     margin: 0;
-    padding-left: 15%;
+    padding-left: 10%;
+    padding-bottom: 5%;
     display: flex;
     align-items: center;
 }
 
 .section-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 750px;
+    display: flex;
+    height: 500px;
+    margin-top: 5%;
 }
 
 .imgintro {
-    width: auto;
-    height: 55rem;
+    padding-right: 10%;
+    padding-left: 5%;
+    scale: 1.5;
 }
 
 .fondingredient {
@@ -132,19 +133,13 @@
 @media screen and (max-width:1240px) {
 
     .title1 {
-        font-size: 3em;
-        padding-left: 20%;
+        font-size: 2.8em;
+        padding-left: 10%;
     }
 
     .imgintro {
-        width: auto;
-        height: 40em;
-        margin: auto;
-        padding-top: 10%;
-    }
-
-    .section-header {
-        height: 550px;
+        padding-right: 5%;
+        scale: 1.2;
     }
 
     #meet {
@@ -176,8 +171,8 @@
 @media screen and (max-width:900px) {
 
     .title1 {
-        font-size: 2.2em;
-        padding-left: 20%;
+        font-size: 2em;
+        padding-left: 10%;
     }
 
     .section-header {
@@ -185,9 +180,10 @@
     }
 
     .imgintro {
-        width: 23em;
-        height: auto;
+        padding-right: 10%;
+        scale: 1.8;
     }
+
 
     .fondingredient {
         margin-top: 20%;
@@ -276,13 +272,12 @@
 
     .title1 {
         font-size: 1.8em;
-        padding-left: 20%;
+        padding-left: 10%;
     }
 
     .imgintro {
-        width: 20em;
-        margin: auto;
-        padding-top: 10%;
+        padding-right: 10%;
+        scale: 1.5;
     }
 
     #salad {
