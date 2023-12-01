@@ -238,7 +238,7 @@
         border-radius: 360px;
         width: 60%;
         height: 100%;
-        object-fit: none;
+        object-fit: cover;
         border: white solid 3px;
         filter: drop-shadow(10px 10px 10px rgb(58, 60, 58));
     }
@@ -378,7 +378,7 @@
         width: 250px;
         height: 250px;
         border: white solid 3px;
+        object-fit: contain;
         filter: drop-shadow(10px 10px 10px rgb(58, 60, 58));
     }
-
 }
