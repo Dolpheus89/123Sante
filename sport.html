@@ -29,9 +29,11 @@
             <li><a href="recettes.html">Idées menu</a></li>
         </ul>
     </nav>
+
         <header>
         <h2 id="prog">NOS PROGRAMMES</h2>
         </header>
+        
         <section>
         <div class="coureuse">
             <img src="imagesheader/course.jpg" alt="image coureuse" id="imgcoureuse">
@@ -54,16 +56,56 @@
         <div class="text">
             <p>Choisis une des deux options pour générer ta séance</p>
         </div>
-    
+     <div class="overlay" id="overlay"></div>
     <div class="seances">
+       
         <div class="seance-maison">
-            <img class="choixLieux" src="images/maison.png" alt="maison">
+            <img class="choixLieux" src="images/maison.png" alt="maison" id = "maison">
             <p>A la maison, sans matériel</p>
         </div>
+        
         <div class="En-salle">
-            <img class="choixLieux"src="images/halteres.png" alt="salle">
+            <img class="choixLieux"src="images/halteres.png" alt="salle" id = "salle">
             <p>En salle de musculation</p>
         </div>
+    </div>
+
+    <!-- Partie pop-up séances échauffements -->
+
+    <div class="overlay" id="overlay"></div>
+    <div id ="popupAccueil">
+        <button id = "closePopup">x</button>
+        <h2 class="titreSeanceMaison">Séance à la maison</h2>
+        <p id = "echauffementMaison">Echauffement sans materiel :
+            <br><br>
+            <span class="bold">1. Articulations :</span> <br>
+            •	Effectue des rotations articulaires (chevilles, genoux, hanches, épaules, tête, coudes et poignets.)
+            <br><br>
+            <span class="bold">2.	Saut a la corde (sautiller sur place si pas de corde) :</span> <br>
+            •	2 minutes
+            <br><br>
+            <span class="bold">3.	Jumping Jack :</span> <br>
+            •	1 minute
+            <br><br>
+            <span class="bold">4.	Mountain climber :</span> <br>
+            •	Position planche, ramener les genoux vers la poitrine 1 par 1 <br>
+            •	1 minute
+        </p>
+
+        <h2 class="titreSeanceSalle">Séance en salle</h2>
+         <p id = "echauffementSalle">Echauffement en salle :
+            <br><br>
+            <span class="bold">1.  Cardio léger :</span> <br>
+            •   5 minutes (rameur, vélo, course...)
+            <br><br>
+            <span class="bold">2.	Articulations :</span> <br>
+            •	Effectue des rotations articulaires (chevilles, genoux, hanches, épaules, tête, coudes et poignets.)
+            <br><br>
+           <span class="bold"> 3.	Serie charge légère :</span> <br>
+            •	25% de sa charge de travail puis 50% et 75% <br>
+            •   Entre 4 et 8 répétitions
+        </p>
+        
     </div>
     <div class="pop-up">
         <img src="images/yoga.png">
