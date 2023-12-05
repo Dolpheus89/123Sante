@@ -1,0 +1,182 @@
+.container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  margin-top: 0px;
+
+}
+
+.container h1 {
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+  text-align: left;
+
+}
+
+.container img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+
+
+/* Barre de navigation */
+#NavigationPage {
+  background-color: white;
+  margin: 0px 50px 0px 50px;
+  border-radius: 20px 0px 0px 20px;
+}
+#NavigationPage ul {
+  display: flex;
+  padding-inline-start: 0px;
+  box-shadow: var(--shadow);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#NavigationPage ul li {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  width: 100%;
+}
+#NavigationPage ul li a {
+  color: black;
+  display: block;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0;
+  width: 100%;
+  padding: 50px 0px;
+}
+#NavigationPage ul li a:hover {
+  background-color: var(--primaryColor); 
+}
+#PrincipalInformation article:first-child {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 100%;
+}
+
+#PrincipalInformation div {
+  margin-top: 100px;
+}
+
+#PrincipalInformation article:nth-child(2) {
+  display: flex;
+}
+
+#PrincipalInformation article:nth-of-type(2) div:nth-of-type(2) {
+  margin-top: 100px;
+}
+
+
+/* responsive */
+
+@media (max-width: 899px) {
+
+  .container {
+    padding: 0px 0px 0px 10px ;
+    margin-top: 200px;
+  }
+
+
+  .container h1 {
+    width: 30%;
+    font-size: 2rem;
+    margin-bottom: 200px;
+    margin: auto;
+    display: contents;
+    }
+
+  .container img {
+    width: 55%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin: auto;
+  }
+
+  article img:first-of-type {
+    margin: auto;
+    max-width: 50%;
+  }
+
+  article div:first-of-type {
+    text-align: justify;
+    margin-top: 25px;
+    margin-right: 25px;
+  }
+
+  article div:nth-of-type(2) {
+    text-align: justify;
+    margin-top: 25px;
+    margin-right: 25px;
+  }
+
+  article img:nth-of-type(2) {
+    margin: auto;
+    max-width: 50%;
+  }
+
+  #NavigationPage {
+    margin: 0 25px;
+
+  }
+  #NavigationPage ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width:499px) {
+  .container img {
+    content: url('image/WhatsApp_Image_2023-11-24_at_10.49 5.png')
+  }
+
+  .container {
+    padding: 0px 0px 0px 10px ;
+    margin-top: 200px;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .container h1 {
+    position: absolute;
+    width: 80%;
+  }
+
+  #navigationPage {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  #PrincipalInformation article:first-child {
+    display: flex;
+    flex-direction: column-reverse;
+    border-top: 20px;
+  }
+
+  #PrincipalInformation div {
+    text-align: justify;
+    padding: 25px 10px 0px 10px;
+    margin: 0px;
+
+  }
+
+  #PrincipalInformation article:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #PrincipalInformation article:nth-of-type(2) div:nth-of-type(2) {
+    text-align: center;
+    margin: 25px 10px 0px 10px;
+    ;
+  }
+
+}

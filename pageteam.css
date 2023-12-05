@@ -1,0 +1,66 @@
+.byteam {
+    display: grid;
+    grid-template-columns: repeat(2, 10fr);
+    grid-gap: 40px;
+    justify-items: center;
+    align-items: baseline;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-left: 10PX;
+    margin-right: 10px;
+    padding: 80px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 4.47%;
+    border-radius: 5px;
+    background-color: #d9d9d9cc;
+    box-shadow: 0 4px 5px 0 #5c5c5ccc;
+    cursor: pointer;
+    padding: 30px;
+}
+
+
+
+.team-member:last-child {
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: span 2;
+
+
+}
+
+
+.member-image {
+    width: 20%;
+    border-radius: 100px;
+    height: auto;
+    padding: 7px;
+    object-fit: cover;
+}
+
+
+
+
+.member-info {
+    margin-top: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .byteam {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Изменили repeat(2, 10fr) на repeat(1, 1fr) */
+        grid-gap: 30px;
+        
+      
+    }
+    .team-member:last-child {
+      
+        grid-column: span 1; /* Изменили span 2 на span 1 */
+    }
+
+}

@@ -1,0 +1,145 @@
+header {
+    padding: 0 5% 0 5%;
+}
+
+section {
+
+    margin-left: 2%;
+    /* padding-bottom: 20%; */
+    display: flex;
+}
+
+#prog {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 5% 25% 0 25%;
+    font-size: 2.5vw;
+}
+
+#imgcoureuse {
+    border: 0.75vw solid white;
+    border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
+    margin: 7% 0 0 5%;
+    box-shadow: rgba(91, 91, 91, 0.3) 0px 7px 29px 0px;
+}
+
+.title {
+    display: flex;
+    margin: 2% 0 0 20%;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background-image: url(imagesheader/logo.png);
+    background-size: 55vw auto;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    font-size: 4.5vw;
+    margin: 20% 0 0 0;
+    padding: 0;
+
+}
+
+#design {
+    width: 18vw;
+    height: 18vw;
+}
+
+
+
+#programmes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+}
+
+div a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: var(--shadow);
+}
+
+a {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.text {
+    text-align: center;
+    font-size: 22px;
+}
+
+.seance-maison{
+    display: inline-block;
+    text-align: center;
+    text-orientation: column;
+    padding-top: 20px;
+}
+
+.En-salle {
+    display: inline-block;
+    text-align: center;
+    text-orientation: column;
+    justify-content: end;
+    padding-top: 20px;
+}
+
+.seances {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+@media screen and (max-width:650px) {
+    .seances {
+        flex-wrap: wrap;
+    }
+
+    .choixLieux {
+        width: 50%;
+        heigth: 50%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .list {
+        flex-direction: column;
+    }
+}
+
+.pop-up {
+    display: flex;
+    justify-content: center;
+    padding-top: 30%;
+}
+
+.sous-menu {
+    background-color: #E4D8FE;
+    border-radius: 10px;
+    padding-top: 10px;
+    position: absolute;
+}
