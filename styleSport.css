@@ -68,17 +68,6 @@ div a {
     margin: 0;
 }
 
-/* .list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-color: white;
-    margin-left: 50px;
-    margin-right: 50px;
-} */
-
 a{
     padding-right: 10px;
     padding-left: 10px;
@@ -105,10 +94,6 @@ a{
 }
 
 .seances{
-    /* display: flex;
-    justify-content: space-around;
-    text-align: center;
-    list-style: none; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -133,19 +118,6 @@ a{
     justify-content: center;
     padding-top: 30%;
 }
-
-/* .sous-menu{
-    background-color:#E4D8FE;
-    border-radius: 10px;
-    padding-top: 10px;
-    position: absolute;
-} */
-
-/* #sous-menu{
-    background-color: #E4D8FE;
-    border-radius: 10px;
-    padding-top: 2cd0px;
-} */
 
 /* Style du bouton */
 .dropbtn {
@@ -179,9 +151,9 @@ a{
     display: none;
     position: absolute;
     background-color: white;
-    /* min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1; */
+    top: 70px;
+    text-align: left;
+    padding-left: 25px;
 }
 
 /* Style des liens du menu déroulant */
