@@ -5,7 +5,7 @@ header {
 section {
 
     margin-left: 2%;
-    padding-bottom: 20%;
+    /* padding-bottom: 20%; */
     display: flex;
 }
 
@@ -15,7 +15,7 @@ section {
     text-align: center;
     border-radius: 10px;
     padding: 1em;
-    margin: 0 25%;
+    margin: 5% 25% 0 25%;
     font-size: 2.5vw;
 }
 
@@ -55,7 +55,7 @@ h1 {
 
 
 
-#programmes{
+#programmes {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -63,7 +63,7 @@ h1 {
 }
 
 div a {
-    display : inline-block;
+    display: inline-block;
     text-decoration: none;
     color: black;
     justify-content: center;
@@ -79,57 +79,66 @@ div a {
     background-color: white;
     margin-left: 50px;
     margin-right: 50px;
+    box-shadow: var(--shadow);
 }
 
-a{
+a {
     padding-right: 10px;
     padding-left: 10px;
 }
 
-.text{
+.text {
     text-align: center;
     font-size: 22px;
 }
 
 .seance-maison{
-    display: inline-block; */
-    text-align: center;
-    text-orientation: column;
-    padding-top: 20px;
-}
-
-.En-salle{
     display: inline-block;
     text-align: center;
     text-orientation: column;
-    justify-content:end;
     padding-top: 20px;
 }
 
-.seances{
+.En-salle {
+    display: inline-block;
+    text-align: center;
+    text-orientation: column;
+    justify-content: end;
+    padding-top: 20px;
+}
+
+.seances {
     display: flex;
     justify-content: space-around;
     text-align: center;
 }
 
 
-@media screen and (max-width:650px){
-    .seances{flex-wrap: wrap;}
-    .choixLieux{width:50%, heigth:50%}
+@media screen and (max-width:650px) {
+    .seances {
+        flex-wrap: wrap;
+    }
+
+    .choixLieux {
+        width: 50%;
+        heigth: 50%;
+    }
 }
 
-@media screen and (max-width:500px){
-    .list{flex-direction: column;}
+@media screen and (max-width:500px) {
+    .list {
+        flex-direction: column;
+    }
 }
 
-.pop-up{
+.pop-up {
     display: flex;
     justify-content: center;
-    padding-top: 10%;
+    padding-top: 30%;
 }
 
-.sous-menu{
-    background-color:#E4D8FE;
+.sous-menu {
+    background-color: #E4D8FE;
     border-radius: 10px;
     padding-top: 10px;
     position: absolute;
