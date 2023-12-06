@@ -101,6 +101,16 @@ div a {
         background-color: white;
         margin-left: 50px;
         margin-right: 50px;
+        margin-top: 70px;
+}
+.seancesProg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    margin:auto;
+    width: 80%;
 }
 
 /* pop up */
@@ -204,13 +214,25 @@ div a {
         width: 50%;
         height: 50%;
     }
-   
+
+    .dropbtn{
+        display:none;
+    }
+
+    .dropdown-content1 {
+    top: 190px;
+    }
+
+    .dropdown-content2 {
+        top: 170px;
+    }
+
+    .seances .mobil-link{
+        display: block;
+    }
 }
 
 @media screen and (max-width:500px) {
-    .list {
-        flex-direction: column;
-    }
     #popupAccueil{
         width: 80%;
         height: 70%;
@@ -226,7 +248,9 @@ div a {
 .pop-up {
     display: flex;
     justify-content: center;
-    padding-top: 15%;
+    padding-top: 25%;
+    padding-bottom: 50px;
+
 }
 
 /* Style du bouton */
@@ -257,15 +281,32 @@ div a {
 }
 
 /* Style du contenu du menu déroulant (caché par défaut) */
-.dropdown-content {
+.dropdown-content1 {
     display: none;
     position: absolute;
     background-color: white;
     top: 70px;
     text-align: left;
-    padding-left: 25px;
+    /* padding-left: 25px; */
 }
 
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    text-align: left;
+    /* padding-left: 25px; */
+}
+
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    text-align: left;
+    /* padding-left: 25px; */
+}
 
 /* Style des liens du menu déroulant */
 .dropdown-content a {

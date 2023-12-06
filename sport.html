@@ -47,19 +47,22 @@
 <div class="seances">
     <div class="dropdown">
     <button onclick="toggleDropdown('myDropdown')" class="dropbtn">Remise en forme</button>
-    <div id="myDropdown" class="dropdown-content">
+    <div id="myDropdown" class="dropdown-content1">
         <div class="submenu">
             <a href="Echauff"> Echauffement</a>
             <a href="CircuitT"> Circuit Training</a>
             <a href="ABS"> Abdos / Gainage</a>
         </div>
     </div>
-    <img src=images/abdos.png alt="abdos">
+    <!-- <a href="clicAbdos" class="mobile-link"> -->
+        <img src="images/abdos.png" alt="abdos" onclick="toggleDropdown('myDropdown')">
+    <!-- </a> -->
+    <!-- <img src=images/abdos.png alt="abdos"> -->
 </div>
 
-<div class="dropdown1">
+    <div class="dropdown1">
     <button onclick="toggleDropdown1('myDropdown1')" class="dropbtn">Gain Musculaire</button>
-    <div id="myDropdown1" class="dropdown-content">
+    <div id="myDropdown1" class="dropdown-content2">
         <div class="submenu">
             <a href="HDC"> Haut du corps</a>
             <a href="BDC"> Bas du corps</a><br>
@@ -69,9 +72,9 @@
     <img src=images/gainmusculaire.png alt="haltère">
 </div>
 
-<div class="dropdown2">
+    <div class="dropdown2">
     <button onclick="toggleDropdown2('myDropdown2')" class="dropbtn">Perte de Poids</button>
-    <div id="myDropdown2" class="dropdown-content">
+    <div id="myDropdown2" class="dropdown-content3">
         <div class="submenu">
             <a href="Echauff"> Echauffement</a>
             <a href="CircuitT"> Circuit Cross Training</a>
