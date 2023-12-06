@@ -53,8 +53,6 @@ h1 {
     height: 18vw;
 }
 
-
-
 #programmes {
     display: flex;
     justify-content: center;
@@ -70,19 +68,7 @@ div a {
     margin: 0;
 }
 
-.list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-color: white;
-    margin-left: 50px;
-    margin-right: 50px;
-    box-shadow: var(--shadow);
-}
-
-a {
+ a {
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -107,10 +93,14 @@ a {
     padding-top: 20px;
 }
 
-.seances {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+.seances{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: white;
+        margin-left: 50px;
+        margin-right: 50px;
 }
 
 /* pop up */
@@ -191,6 +181,7 @@ a {
 .titreSeanceMaison {
     font-size: 1.8rem;
 }
+
 @media screen and (max-width:900px) {
     #popupAccueil{
         width: 50%;
@@ -235,12 +226,68 @@ a {
 .pop-up {
     display: flex;
     justify-content: center;
-    padding-top: 30%;
+    padding-top: 15%;
 }
 
-.sous-menu {
-    background-color: #E4D8FE;
-    border-radius: 10px;
-    padding-top: 10px;
+/* Style du bouton */
+.dropbtn {
+    background-color:white;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: center;
+}
+
+/* Style du conteneur du menu déroulant */
+.dropdown {
+    position: relative;
+    display : flex;
+}
+
+.dropdown1 {
+    position: relative;
+    display: flex;
+}
+
+.dropdown2 {
+    position: relative;
+    display: flex;
+}
+
+/* Style du contenu du menu déroulant (caché par défaut) */
+.dropdown-content {
+    display: none;
     position: absolute;
+    background-color: white;
+    top: 70px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+
+/* Style des liens du menu déroulant */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+/* Style des liens au survol */
+.dropdown-content a:hover {
+    background-color:#E4D8FE;
+}
+
+/* Affiche le menu déroulant lorsqu'il est ouvert */
+.show {
+    display: block;
+}
+
+#displayText {
+    background-color: #F9F5FF;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
