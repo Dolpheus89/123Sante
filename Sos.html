@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="Sos.css">
     <title>Document</title>
 <body>
+        <!-- message when click on case  -->
+        <div class="modal-container modal-trigger">
+            <div class="overlay"></div>
+      
+            <div class="modal">
+              <button class="close-modal modal-trigger" onclick="toggleModal()">X</button>
+              <h1>Contenu</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
     <header> 
         <nav>
             <div class="logoContainer">
-                <img src="assets/WhatsApp_Image_2023-11-24_at_10.49.16.png" alt="logo" id="logo">
+                <a href="index.html"><img src="assets/WhatsApp_Image_2023-11-24_at_10.49.16.png" alt="logo" id="logo" class="rotate-in-center"></a>
                 <img src="assets/Ellipse 39.png" alt="logo background" id="ellipse">
                 <div class="textContainer">
                     <h2>123...Santé</h2>
@@ -46,46 +56,46 @@
     <section id="calculatorSection">
         <article id="data">
             <h3>Données prises en comptes </h3>
-            <div class="glass">
-                <h3>Taux Sécurité social</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque</p>
+            <div class="glass case1 modal-trigger">
+                <h3>Taux de remboursement de la <br> Sécurité sociale</h3>
+                <p>L’Assurance maladie obligatoire couvre une partie de vos dépenses de santé.</p>
             </div>
-            <div class="glass">
+            <div class="glass case2 modal-trigger">
                 <h3>Taux garantie mutuelle</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque</p>
+                <p>Les remboursements de la mutuelle santé sont généralement indexés sur la base du tarif de convention de la Sécurité sociale. Ils sont exprimés en pourcentage.</p>
             </div>
-            <div class="glass">
+            <div class="glass case3 modal-trigger">
                 <h3>Tarif conventionel</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque</p>
+                <p>Les tarifs des frais de santé sont fixés par convention entre les professionnels de santé et l’Assurance maladie.</p>
             </div>
-            <div class="glass">
+            <div class="glass case4 modal-trigger">
                 <h3>Dépassement d’honoraires</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque</p>
+                <p>Lorsque les tarifs pratiqués par un médecin sont supérieurs aux tarifs de convention de la Sécurité sociale, on parle de dépassements d’honoraires.</p>
             </div>
         </article>
-        <article class="glass calculatorContainer">
+        <article class="glass calculatorContainer"   id="trigger">
             <form id="calculator" action="">
                 <fieldset>
                     <legend>Le Régime d’Assurance Maladie</legend>
-                    <label for="RG" id="RG">Régime général</label>
-                    <input type="radio" name="regime" id="RG">
-                    <label for="RL" id="RL">Régime local</label>
-                    <input type="radio" name="regime" id="RL">
+                    <label for="RG">Régime général</label>
+                    <input type="radio" name="regime" id="RG" value="0.3" checked>
+                    <label for="RL" >Régime local</label>
+                    <input type="radio" name="regime" id="RL" value="0.1">
                 </fieldset>
                 <label for="tarifC">Tarif conventionel</label>
-                <input type="text" name="tarifC" id="tarifC">
+                <input type="text" name="tarifC" id="tarifC" value="0">
                 <label for="mtnD">Montant dépassement</label>
-                <input type="text" name="mtnD" id="mtnD">
+                <input type="text" name="mtnD" id="mtnD" value="0">
                 <label for="tauxGMut">Taux garantie mutuelle</label>
                 <select name="tauxGMut" id="tauxGMut">
-                    <option value="">--Please choose an option--</option>
-                    <option value="100%">100% de prise en charge</option>
-                    <option value="150%">150% de prise en charge</option>                   
-                    <option value="200%">200% de prise en charge</option>
-                    <option value="300%">300% de prise en charge</option>
+                    <option value=0>--Please choose an option--</option>
+                    <option value=0>100% de prise en charge</option>
+                    <option value=0.5>150% de prise en charge</option>                   
+                    <option value=1>200% de prise en charge</option>
+                    <option value=2>300% de prise en charge</option>
                   </select>                 
                 <input type="button" value="Calcul" id="calcul">
-                <input type="text" id="result" readonly>
+                <input type="text" id="result" readonly value="">
 
             </form>
         </article>
@@ -100,5 +110,6 @@
     </div>
 </footer>
   <script src="index.js"></script>
+  <script src="Sos.js"></script>
 </body>
 </html>
