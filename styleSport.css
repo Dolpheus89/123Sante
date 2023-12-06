@@ -5,7 +5,7 @@ header {
 section {
 
     margin-left: 2%;
-    padding-bottom: 20%;
+    /* padding-bottom: 20%; */
     display: flex;
 }
 
@@ -15,7 +15,7 @@ section {
     text-align: center;
     border-radius: 10px;
     padding: 1em;
-    margin: 0 25%;
+    margin: 5% 25% 0 25%;
     font-size: 2.5vw;
 }
 
@@ -53,7 +53,7 @@ h1 {
     height: 18vw;
 }
 
-#programmes{
+#programmes {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -61,35 +61,35 @@ h1 {
 }
 
 div a {
-    display : inline-block;
+    display: inline-block;
     text-decoration: none;
     color: black;
     justify-content: center;
     margin: 0;
 }
 
-a{
+ a {
     padding-right: 10px;
     padding-left: 10px;
 }
 
-.text{
+.text {
     text-align: center;
     font-size: 22px;
 }
 
 .seance-maison{
-    display: inline-block; */
+    display: inline-block;
     text-align: center;
     text-orientation: column;
     padding-top: 20px;
 }
 
-.En-salle{
+.En-salle {
     display: inline-block;
     text-align: center;
     text-orientation: column;
-    justify-content:end;
+    justify-content: end;
     padding-top: 20px;
 }
 
@@ -103,17 +103,127 @@ a{
         margin-right: 50px;
 }
 
+/* pop up */
 
-@media screen and (max-width:650px){
-    .seances{flex-wrap: wrap;}
-    .choixLieux{width:50%, heigth:50%}
+#maison, #salle {
+    cursor: pointer;
 }
 
-@media screen and (max-width:500px){
-    .list{flex-direction: column;}
+#maison:hover, #salle:hover {
+    filter: blur(2px);
 }
 
-.pop-up{
+#closePopup {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    width: 25px;
+    height: 25px;
+    border: none;
+}
+
+#closePopup:hover {
+    color: #FFC47E;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#popupAccueil {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 26%;
+    /* height: 55%; */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 6px solid #FFC47E;
+    border-radius: 10px;
+    padding: 2%;
+} 
+
+.bold {
+    font-weight: bold;
+    font-size: 1.2rem;
+    }
+
+#echauffementMaison{
+    padding: 0% 5%;
+    text-align: start;
+    font-size: 1.1rem;
+    
+} 
+
+#echauffementSalle {
+    padding: 0% 5%;
+    text-align: start;
+    font-size: 1.1rem;
+}
+
+.titreSeanceSalle {
+    display: none;
+    font-size: 1.8rem;
+}
+.titreSeanceMaison {
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width:900px) {
+    #popupAccueil{
+        width: 50%;
+        height: 45%;
+      }
+      .titreSeanceMaison {
+        font-size: 1.4rem;
+      }
+      #echauffementMaison, .bold {
+        font-size: 1rem;
+      }
+}
+    
+@media screen and (max-width:650px) {
+    .seances {
+        flex-wrap: wrap;
+    }
+
+    .choixLieux {
+        width: 50%;
+        height: 50%;
+    }
+   
+}
+
+@media screen and (max-width:500px) {
+    .list {
+        flex-direction: column;
+    }
+    #popupAccueil{
+        width: 80%;
+        height: 70%;
+      }
+      .titreSeanceMaison {
+        font-size: 1.1rem;
+      }
+      #echauffementMaison, .bold {
+        font-size: 0.9rem;
+      }
+}
+
+.pop-up {
     display: flex;
     justify-content: center;
     padding-top: 15%;
