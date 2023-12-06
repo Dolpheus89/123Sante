@@ -156,6 +156,7 @@ a{
     padding-left: 25px;
 }
 
+
 /* Style des liens du menu déroulant */
 .dropdown-content a {
     color: black;
@@ -173,3 +174,10 @@ a{
     display: block;
 }
 
+#displayText {
+    background-color: #F9F5FF;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}

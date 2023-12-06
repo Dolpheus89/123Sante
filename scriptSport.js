@@ -26,3 +26,12 @@ window.onclick = function (event) {
         }
     }
 }
+
+function myFunction() {
+    // Code à exécuter lors du clic sur l'image
+    const displayText = "Assure-toi de faire un échauffement adéquat avant chaque séance, ce qui peut inclure 5 à 10 minutes de cardio léger suivi d'étirements dynamiques.";
+
+    // Afficher le texte dans l'élément avec l'ID "displayText"
+    document.getElementById("displayText").innerHTML = displayText;
+}
+
