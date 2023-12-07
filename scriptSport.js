@@ -35,8 +35,8 @@ function myFunction() {
     document.getElementById("displayText").innerHTML = displayText;
 }
 
-const btnMaisonAccueil = document.getElementById("maison")
-const btnMaisonSalle = document.getElementById("salle")
+const btnMaison = document.getElementById("maison")
+const btnSalle = document.getElementById("salle")
 const popupAccueil = document.getElementById("popupAccueil")
 const closePopup = document.getElementById("closePopup")
 const overlay = document.getElementById("overlay")
@@ -46,7 +46,7 @@ const echauffementMaison = document.getElementById("echauffementMaison")
 const echauffementSalle = document.getElementById("echauffementSalle")
 
 
-btnMaisonAccueil.addEventListener ("click", () => {
+btnMaison.addEventListener ("click", () => {
     popupAccueil.style.display = 'block';
     overlay.style.display = 'block'
     titreSeanceSalle.style.display = 'none'
@@ -61,7 +61,7 @@ closePopup.addEventListener ("click", () => {
     overlay.style.display = 'none'
 })
 
-btnMaisonSalle.addEventListener ("click", () => {
+btnSalle.addEventListener ("click", () => {
     popupAccueil.style.display = 'block';
     overlay.style.display = 'block'
     titreSeanceSalle.style.display = 'block'
