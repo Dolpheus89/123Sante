@@ -124,6 +124,7 @@ div a {
     filter: blur(2px);
 }
 
+
 #closePopup {
     display: flex;
     justify-content: end;
@@ -160,13 +161,13 @@ div a {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 26%;
-    /* height: 55%; */
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
-    border: 6px solid #FFC47E;
+    border: 6px solid #E4D8FE;
     border-radius: 10px;
     padding: 2%;
 } 
+
 
 .bold {
     font-weight: bold;
@@ -193,16 +194,59 @@ div a {
 .titreSeanceMaison {
     font-size: 1.8rem;
 }
+#Salle {
+    font-size: 1.2rem;
+}
+
+#Maison{
+    font-size: 1.2rem;
+}
+
+#generateurS {
+    background-color: rgba(255, 255, 255, 0);
+    width: 70px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    margin-top: 10%;
+    position: relative;
+    left: 43%;
+}
+
+#generateurS:hover {
+    transition: 1s;
+    transform: scale(150%);
+    rotate: 360deg;
+}
+
+#generateurM {
+    background-color: rgba(255, 255, 255, 0);
+    width: 70px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    margin-top: 10%;
+    position: relative;
+    left: 43%;
+} 
+
+#generateurM:hover {
+    /* background-color: #FFC47E; */
+    transition: 1s;
+    transform: scale(150%);
+    rotate: 360deg;
+
+}
 
 @media screen and (max-width:900px) {
     #popupAccueil {
         width: 50%;
-        height: 45%;
-      }
-      .titreSeanceMaison {
+        
+    }
+    .titreSeanceMaison {
         font-size: 1.4rem;
-      }
-      #echauffementMaison, .bold {
+    }
+    #echauffementMaison, .bold {
         font-size: 1rem;
       }
     .dropbtn {
@@ -224,13 +268,31 @@ div a {
         max-width: 98px;
     }
 
-}
+    #Salle, #Maison {
+        font-size: 15px;
+    }
+    #generateurS{
+        left: 42%;
+    }
+    #generateurS:hover {
+        transition: 0s;
+        transform: scale(100%);
+        rotate: 0deg;
+    }
+    #generateurM{
+        left: 42%;
+    }
+    #generateurM:hover {
+        transition: 0s;
+        transform: scale(100%);
+        rotate: 0deg;
+        }
+    }
     
 @media screen and (max-width:650px) {
     .seances {
         flex-wrap: wrap;
     }
-
     .choixLieux {
         width: 50%;
         height: 50%;
@@ -248,12 +310,11 @@ div a {
 @media screen and (max-width:500px) {
     #popupAccueil{
         width: 80%;
-        height: 70%;
-      }
-      .titreSeanceMaison {
+    }
+    .titreSeanceMaison {
         font-size: 1.1rem;
-      }
-      #echauffementMaison, .bold {
+    }
+    #echauffementMaison, .bold {
         font-size: 0.9rem;
       }
 
@@ -287,14 +348,30 @@ div a {
         }
 
         #BarreSeances {
-            width: 190px;
+           width: 190px;
         }
+  
+    #Salle, #Maison {
+        font-size: 14px;
+    }
+    #generateurS {
+        left: 40%;
+    }
+    #generateurS:hover {
+        transition: none;
+    }
+
+    #generateurM {
+        left: 40%;
+    }
+    #generateurM:hover {
+        transition: none;
+    } 
 }
 
 #BarreSeances {
 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
 .pop-up {
     display: flex;
     justify-content: center;
