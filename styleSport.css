@@ -103,6 +103,7 @@ div a {
         margin-right: 50px;
         margin-top: 70px;
 }
+
 .seances {
     display: flex;
     justify-content: space-around;
@@ -141,6 +142,7 @@ div a {
 #closePopup:hover {
     color: #FFC47E;
 }
+
 #overlay {
     display: none;
     position: fixed;
@@ -169,13 +171,12 @@ div a {
 .bold {
     font-weight: bold;
     font-size: 1.2rem;
-    }
+}
 
-#echauffementMaison{
+#echauffementMaison {
     padding: 0% 5%;
     text-align: start;
-    font-size: 1.1rem;
-    
+    font-size: 1.1rem;  
 } 
 
 #echauffementSalle {
@@ -188,12 +189,13 @@ div a {
     display: none;
     font-size: 1.8rem;
 }
+
 .titreSeanceMaison {
     font-size: 1.8rem;
 }
 
 @media screen and (max-width:900px) {
-    #popupAccueil{
+    #popupAccueil {
         width: 50%;
         height: 45%;
       }
@@ -206,18 +208,18 @@ div a {
     .dropbtn {
             display: none;
         }
-    .seances{
+    .seances {
         justify-content: space-around;
     }
-    .submenu{
+    .submenu {
         min-width: 150px;
     }
 
-    .text{
+    .text {
         display:none;
     }
 
-    #myImage{
+    #myImage {
         max-height: 98px ;
         max-width: 98px;
     }
@@ -240,7 +242,7 @@ div a {
 
     .dropdown-content2 {
         top: 170px;
-    } */
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -280,12 +282,17 @@ div a {
             position:static;
         }
 
-        .pop-up{
+        .pop-up {
             flex-direction: column-reverse;
         }
-                
-        
-      
+
+        #BarreSeances {
+            width: 190px;
+        }
+}
+
+#BarreSeances {
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .pop-up {
