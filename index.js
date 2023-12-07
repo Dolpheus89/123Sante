@@ -1,30 +1,90 @@
 const menuButton = document.getElementById("menu");
 const hiddenMenuList = document.getElementById("hiddenMenuList");
+const navigationPage = document.getElementById('NavigationPage');
+const sport = "image/sport.png";
+const nourriture = "image/nourriture.png";
+const windowWidth = window.innerWidth;
 
 menuButton.addEventListener("click", () => {
   menuButton.classList.toggle("active");
   hiddenMenuList.classList.toggle("active");
 });
 
-const links = document.querySelectorAll('#NavigationPage ul li a'); // sélection de tous mes a
+// document.addEventListener('DOMContentLoaded', function() {
+//   const links = document.querySelectorAll('#NavigationPage ul li a');
 
-// pour chaque a événement clique avec déclenchement du paramètre event
-links.forEach(a => {
-  a.addEventListener('click', function(event) {
+//   links.forEach(a => {
+//     a.addEventListener('click', function(event) {
+//       event.preventDefault();
 
+//       let newPage = a.getAttribute('href');
+//       if (newPage === "Sos.html") {
+//         redirectToAnotherPage();
+//       }
+//     });
+//   });
+// });
+// function redirectToAnotherPage() {
+//   window.location.href = "Sos.html";}
+
+// scrollToArticle(link) {
+//   const articles = document.querySelectorAll('#PrincipalInformation article');
+
+//   articles.forEach(article => {
+//     const images = article.querySelectorAll('img');
+//     images.forEach(image => {
+//       const src = image.getAttribute('src');
+//       if (src === "image/nourriture.png" && link.textContent.includes('nourriture') || src === "image/sport.png" && link.textContent.includes('sport')) {
+//         article.scrollIntoView({ behavior: 'smooth', block: 'center' });
+   
+
+
+//   visiblité de la barre    
+
+
+        navigationPage.classList.remove('invisible');
+
+        navigationPage.addEventListener('mouseover', () => {
+          navigationPage.classList.remove('invisible');
+        });
+        navigationPage.addEventListener('mouseout', () => {
+          navigationPage.classList.add('invisible');
+        });
+        
+       
+          
+            // navigationPage.style.position = 'fixed';
+          
+        
+      
+
+// event pour les 2 boutons
+const firstButton = document.querySelector('.premierBouton');
+const secondButton = document.querySelector('.deuxiemeBouton');
+
+firstButton.addEventListener('click',(event) => {
   event.preventDefault();
-  //création d'une variable si chaque lien a à l'attribut ("href") sur lequel j'ai cliqué à la valeur sport ou food ou help
-  //newPage prend la valeur de la page où je souhaite aller 
-  let newPage;
-    if (a.getAttribute('href') === '#sport') {
-      newPage = "sport.html"; 
-    } else if (a.getAttribute('href') === '#food') {
-      newPage = 'recettes.html'; 
-    } else if (a.getAttribute('href') === '#help') {
-      newPage = 'Sos.html'; 
-    }
-// une fois sortie du loop chargement de l'url.
-    window.location.href = newPage;
-  });
+  window.location.href = 'sport.html';
 });
 
+secondButton.addEventListener('click',(event) => {
+  event.preventDefault();
+  window.location.href = 'recettes.html';
+});
+
+//image click 
+
+const imageSport = document.getElementById('sport').querySelector('img');
+const imageNourriture = document.getElementById('nourriture').querySelector('img');
+const responsiveSmartphone = () => {
+  
+  if (windowWidth < 499) {
+    navigationPage.classList.add('invisible');
+imageSport.addEventListener('click',(event) => {
+  event.preventDefault();
+  window.location.href='sport.html';
+})
+imageNourriture.addEventListener('click',(event) => {
+  event.preventDefault();
+  window.location.href='recettes.html';
+})}}
