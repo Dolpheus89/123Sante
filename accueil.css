@@ -37,9 +37,9 @@ html {
   margin:10px auto;
   position: sticky;
   width: 80%;
-  top: 200px;
+  top: 1px;
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+  /* transition: opacity 0.3s ease-in-out; */
   margin: auto;
 
   
@@ -131,10 +131,21 @@ html {
 #PrincipalInformation article:nth-child(2) {
   display: flex;
   margin-left: 10px;
+  margin-top: 300px;
 }
 
 #PrincipalInformation article:nth-of-type(2) div:nth-of-type(2) {
   margin-top: 100px;
+}
+
+.photo {
+  margin-top: 100px;
+}
+.photoUne {
+  margin-top: 100px;
+}
+#sport p {
+  max-width: 80%;
 }
 
 
@@ -166,16 +177,19 @@ html {
   article img:first-of-type {
     margin: auto;
     max-width: 50%;
+    
   }
 
-  article div:first-of-type {
-    text-align: justify;
+  #sport {
+    text-align: left;
     margin-top: 25px;
     margin-right: 25px;
   }
-
+  #nourriture {
+    text-align: right;
+  }
   article div:nth-of-type(2) {
-    text-align: justify;
+    text-align: right;
     margin-top: 25px;
     margin-right: 25px;
     margin-bottom: 10px;
@@ -192,8 +206,7 @@ html {
 
   }
   #NavigationPage ul {
-    display: flex;
-    flex-direction: column;
+    
     margin-top: 0px;
     margin-bottom: 0px;
    
@@ -208,6 +221,20 @@ html {
   .followImage {
     visibility: hidden;
   }
+  #PrincipalInformation {
+    margin-top: 300px;
+  }
+  #nourriture {
+    margin-top: 200px;
+    margin-bottom: 10px;
+  }
+  .photo {
+    margin-top: 50px;
+  }
+  .photoUne {
+    margin-top: 50px;
+  }
+
 }
 
 @media screen and (max-width: 499px) {
@@ -232,8 +259,12 @@ html {
     justify-content: center;
     margin-top: 50px;
     max-width: 20%;
-    position: relative;
+    position: fixed;
+    top: 0px;
    
+  }
+  #NavigationPage ul {
+    flex-direction: column;
   }
 
   #PrincipalInformation article:first-child {
@@ -256,6 +287,7 @@ html {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 50px;
+    margin-right: 10px;
     
   }
 
