@@ -203,6 +203,16 @@ div a {
       #echauffementMaison, .bold {
         font-size: 1rem;
       }
+    .dropbtn {
+            display: none;
+        }
+    .seances{
+        justify-content: space-around;
+    }
+    .submenu{
+        min-width: 150px;
+    }
+
 }
     
 @media screen and (max-width:650px) {
@@ -215,21 +225,13 @@ div a {
         height: 50%;
     }
 
-    .dropbtn{
-        display:none;
-    }
-
     .dropdown-content1 {
     top: 190px;
     }
 
     .dropdown-content2 {
         top: 170px;
-    }
-
-    .seances .mobil-link{
-        display: block;
-    }
+    } */
 }
 
 @media screen and (max-width:500px) {
@@ -243,6 +245,26 @@ div a {
       #echauffementMaison, .bold {
         font-size: 0.9rem;
       }
+
+      .seances{
+        flex-direction: column;
+      }
+    
+        #myDropdown {
+            top: 0px;
+            left: 80px;
+        }
+
+        #myDropdown1 {
+             top: 0px;
+             right: 65px;
+        }
+
+        #myDropdown2 {
+            top: 0px;
+            left: 80px;
+        }
+      
 }
 
 .pop-up {
