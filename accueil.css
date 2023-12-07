@@ -1,3 +1,9 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 .container {
   position: relative;
   display: flex;
@@ -20,20 +26,38 @@
   margin-top: 50px;
 }
 
-
+.followImage {
+  visibility: hidden;
+}
 
 /* Barre de navigation */
 #NavigationPage {
   background-color: white;
-  margin: 0px 50px 0px 50px;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 20px;
+  margin:10px auto;
+  position: sticky;
+  width: 80%;
+  top: 1px;
+  opacity: 1;
+  /* transition: opacity 0.3s ease-in-out; */
+  margin: auto;
+
+  
+
 }
+#NavigationPage.invisible {
+  opacity: 0.1;
+  transition: opacity 0.3s ease-in-out;
+  
+}
+
 #NavigationPage ul {
   display: flex;
   padding-inline-start: 0px;
   box-shadow: var(--shadow);
   margin-top: 0px;
   margin-bottom: 0px;
+  border-radius: 20px;
 }
 
 #NavigationPage ul li {
@@ -46,13 +70,34 @@
   color: black;
   display: block;
   text-align: center;
-  border-radius: 8px;
   padding: 0;
   width: 100%;
   padding: 50px 0px;
 }
+
+.right {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.left {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
 #NavigationPage ul li a:hover {
   background-color: var(--primaryColor); 
+
+}
+.left :hover {
+
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.right :hover {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#PrincipalInformation {
+  margin-top: 500px;
 }
 #PrincipalInformation article:first-child {
   display: flex;
@@ -60,22 +105,53 @@
   max-width: 100%;
 }
 
-#PrincipalInformation div {
+.sectionSport {
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-right: 10px;
 }
+.sectionNourriture {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: end;
+
+}
+
+.photo {
+  margin-top: 30px;
+  text-align: end;
+
+}
+
 
 #PrincipalInformation article:nth-child(2) {
   display: flex;
+  margin-left: 10px;
+  margin-top: 300px;
 }
 
 #PrincipalInformation article:nth-of-type(2) div:nth-of-type(2) {
   margin-top: 100px;
 }
 
+.photo {
+  margin-top: 100px;
+}
+.photoUne {
+  margin-top: 100px;
+}
+#sport p {
+  max-width: 80%;
+}
+
 
 /* responsive */
 
-@media (max-width: 899px) {
+@media (min-width: 500px) and (max-width: 899px) {
 
   .container {
     padding: 0px 0px 0px 10px ;
@@ -101,18 +177,22 @@
   article img:first-of-type {
     margin: auto;
     max-width: 50%;
+    
   }
 
-  article div:first-of-type {
-    text-align: justify;
+  #sport {
+    text-align: left;
     margin-top: 25px;
     margin-right: 25px;
   }
-
+  #nourriture {
+    text-align: right;
+  }
   article div:nth-of-type(2) {
-    text-align: justify;
+    text-align: right;
     margin-top: 25px;
     margin-right: 25px;
+    margin-bottom: 10px;
   }
 
   article img:nth-of-type(2) {
@@ -121,18 +201,43 @@
   }
 
   #NavigationPage {
-    margin: 0 25px;
+    max-width: 50%;
+    
 
   }
   #NavigationPage ul {
-    display: flex;
-    flex-direction: column;
+    
     margin-top: 0px;
     margin-bottom: 0px;
+   
   }
+  .premierBouton {
+    max-width: 30%;
+  }
+   .deuxiemeBouton {
+    max-width: 30%;
+
+  } 
+  .followImage {
+    visibility: hidden;
+  }
+  #PrincipalInformation {
+    margin-top: 300px;
+  }
+  #nourriture {
+    margin-top: 200px;
+    margin-bottom: 10px;
+  }
+  .photo {
+    margin-top: 50px;
+  }
+  .photoUne {
+    margin-top: 50px;
+  }
+
 }
 
-@media (max-width:499px) {
+@media screen and (max-width: 499px) {
   .container img {
     content: url('image/WhatsApp_Image_2023-11-24_at_10.49 5.png')
   }
@@ -153,6 +258,13 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    max-width: 20%;
+    position: fixed;
+    top: 0px;
+   
+  }
+  #NavigationPage ul {
+    flex-direction: column;
   }
 
   #PrincipalInformation article:first-child {
@@ -162,7 +274,10 @@
   }
 
   #PrincipalInformation div {
-    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
     padding: 25px 10px 0px 10px;
     margin: 0px;
 
@@ -171,12 +286,26 @@
   #PrincipalInformation article:nth-child(2) {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    
   }
 
   #PrincipalInformation article:nth-of-type(2) div:nth-of-type(2) {
     text-align: center;
     margin: 25px 10px 0px 10px;
     ;
+  }
+  .premierBouton {
+   visibility: hidden;
+  }
+   .deuxiemeBouton {
+
+    visibility: hidden;
+
+  } 
+  .followImage {
+    visibility: visible;
   }
 
 }
