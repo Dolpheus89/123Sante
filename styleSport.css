@@ -93,7 +93,7 @@ div a {
     padding-top: 20px;
 }
 
-.seances{
+.seancesProg {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -103,9 +103,9 @@ div a {
         margin-right: 50px;
         margin-top: 70px;
 }
-.seancesProg {
+.seances {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-radius: 10px;
     background-color: white;
@@ -213,6 +213,15 @@ div a {
         min-width: 150px;
     }
 
+    .text{
+        display:none;
+    }
+
+    #myImage{
+        max-height: 98px ;
+        max-width: 98px;
+    }
+
 }
     
 @media screen and (max-width:650px) {
@@ -253,17 +262,29 @@ div a {
         #myDropdown {
             top: 0px;
             left: 80px;
+            font-size: 0.80rem;
+            position: static;
         }
 
         #myDropdown1 {
-             top: 0px;
-             right: 65px;
+            top: 0px;
+            right: 65px;
+            font-size: 0.80rem;
+            position: static;
         }
 
         #myDropdown2 {
             top: 0px;
             left: 80px;
+            font-size: 0.80rem;
+            position:static;
         }
+
+        .pop-up{
+            flex-direction: column-reverse;
+        }
+                
+        
       
 }
 
@@ -306,7 +327,7 @@ div a {
 .dropdown-content1 {
     display: none;
     position: absolute;
-    background-color: white;
+    /* background-color: white; */
     top: 70px;
     text-align: left;
     /* padding-left: 25px; */
@@ -315,7 +336,7 @@ div a {
 .dropdown-content2 {
     display: none;
     position: absolute;
-    background-color: white;
+    /* background-color: white; */
     top: 70px;
     text-align: left;
     /* padding-left: 25px; */
@@ -324,7 +345,7 @@ div a {
 .dropdown-content3 {
     display: none;
     position: absolute;
-    background-color: white;
+    /* background-color: white; */
     top: 70px;
     text-align: left;
     /* padding-left: 25px; */
