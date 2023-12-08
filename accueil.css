@@ -252,7 +252,7 @@ button:hover {
 
 }
 
-@media screen and (max-width: 499px) {
+@media (min-width:250px) and (max-width: 499px) {
   .container img {
     content: url('image/WhatsApp_Image_2023-11-24_at_10.49 5.png')
   }
@@ -269,17 +269,34 @@ button:hover {
     width: 80%;
   }
 
-  #navigationPage {
+  #NavigationPage {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 200px;
     max-width: 20%;
-    position: fixed;
+    position: relative;
     top: 0px;
    
   }
   #NavigationPage ul {
     flex-direction: column;
+  }
+  .left {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .left :hover {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius:20px;
+  }
+  .right :hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+  } 
+  #PrincipalInformation {
+    margin-top: 300px;
   }
 
   #PrincipalInformation article:first-child {

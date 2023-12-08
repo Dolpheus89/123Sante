@@ -3,40 +3,12 @@ const hiddenMenuList = document.getElementById("hiddenMenuList");
 const navigationPage = document.getElementById('NavigationPage');
 const sport = "image/sport.png";
 const nourriture = "image/nourriture.png";
-const windowWidth = window.innerWidth;
+
 
 menuButton.addEventListener("click", () => {
   menuButton.classList.toggle("active");
   hiddenMenuList.classList.toggle("active");
 });
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   const links = document.querySelectorAll('#NavigationPage ul li a');
-
-//   links.forEach(a => {
-//     a.addEventListener('click', function(event) {
-//       event.preventDefault();
-
-//       let newPage = a.getAttribute('href');
-//       if (newPage === "Sos.html") {
-//         redirectToAnotherPage();
-//       }
-//     });
-//   });
-// });
-// function redirectToAnotherPage() {
-//   window.location.href = "Sos.html";}
-
-// scrollToArticle(link) {
-//   const articles = document.querySelectorAll('#PrincipalInformation article');
-
-//   articles.forEach(article => {
-//     const images = article.querySelectorAll('img');
-//     images.forEach(image => {
-//       const src = image.getAttribute('src');
-//       if (src === "image/nourriture.png" && link.textContent.includes('nourriture') || src === "image/sport.png" && link.textContent.includes('sport')) {
-//         article.scrollIntoView({ behavior: 'smooth', block: 'center' });
-   
 
 
 //   visiblité de la barre    
@@ -74,11 +46,11 @@ secondButton.addEventListener('click',(event) => {
 
 //image click 
 
-const imageSport = document.getElementById('sport').querySelector('img');
-const imageNourriture = document.getElementById('nourriture').querySelector('img');
-const responsiveSmartphone = () => {
-  
+
+ const windowWidth = window.innerWidth;
   if (windowWidth < 499) {
+    const imageSport = document.getElementById('sport').querySelector('img');
+    const imageNourriture = document.getElementById('nourriture').querySelector('img');
     navigationPage.classList.add('invisible');
 imageSport.addEventListener('click',(event) => {
   event.preventDefault();
@@ -87,4 +59,5 @@ imageSport.addEventListener('click',(event) => {
 imageNourriture.addEventListener('click',(event) => {
   event.preventDefault();
   window.location.href='recettes.html';
-})}}
+})}
+
